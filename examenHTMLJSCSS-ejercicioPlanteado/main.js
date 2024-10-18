@@ -28,13 +28,13 @@ window.listadoPrestamos = function() {
     imagenContainer.innerHTML = "";
     //Creo elemento de la imagen
     const imgElement = document.createElement('img');
-  //Llamo al elemento de la imagen
+    //Llamo al elemento de la imagen
     imgElement.src = imgPrestamos();
    
    
     imgElement.alt = "Imagen de Préstamos";
    
-    imgElement.className = "w-100";
+    imgElement.className = "img-fluid col-5 w-100";
     imagenContainer.appendChild(imgElement); 
 }
 
@@ -52,7 +52,8 @@ window.listaSocios = function() {
    
     imgElement.src = imgSocios();
     imgElement.alt = "Imagen de Socios";
-    imgElement.className = "w-100";
+    // le doy un tamaño para que no sea muy gande
+    imgElement.className = "img-fluid col-5 w-100";
     imagenContainer.appendChild(imgElement);
 }
 

@@ -78,7 +78,7 @@ export function imgPrestamos() {
 export function listaSocios() {
     // Crea y devuelve la lista de socios
     const table = document.createElement('table');
-    table.className = "table table-striped"; 
+    table.className = "table table-striped  col-5"; 
 
     const tr = document.createElement('thead');
     const th1 = document.createElement('th');
